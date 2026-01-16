@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en-US" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Experienced Legal Law Firm | Davis Ford Lawyers</title>
+    <meta name="description" content="Looking for an experienced legal law firm? Our law firm provides expert representation in Sydney, specializing in traffic and criminal defense lawyer services."/>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a', // Deep authoritative navy
+                        },
+                        brand: {
+                            red: '#cf2e2e', // Client's vivid red
+                            darkred: '#a52020',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'infinite-scroll': 'infinite-scroll 60s linear infinite', // Slower for readability
+                    },
+                    keyframes: {
+                        'infinite-scroll': {
+                            from: { transform: 'translateX(0)' },
+                            to: { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities */
+        .marquee-container {
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Top Bar -->
+    <div class="bg-navy-900 text-white text-sm py-2 border-b border-gray-800">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex space-x-6 mb-2 md:mb-0">
+                <a href="tel:0431666741" class="hover:text-brand-red transition-colors flex items-center"><i class="fas fa-phone-alt mr-2 text-brand-red"></i>0431 666 741</a>
+                <a href="mailto:info@dflawyers.com.au" class="hover:text-brand-red transition-colors flex items-center"><i class="fas fa-envelope mr-2 text-brand-red"></i>info@dflawyers.com.au</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://www.facebook.com/profile.php?id=100090150910007&sk=about" target="_blank" class="hover:text-brand-red transition-colors"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/davis.fordlawyers/" target="_blank" class="hover:text-brand-red transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@davisfordlawyers" target="_blank" class="hover:text-brand-red transition-colors"><i class="fab fa-tiktok"></i></a>
+                <a href="https://youtube.com/@davisfordlawyers?si=lsob6x9FzMH9mHJY" target="_blank" class="hover:text-brand-red transition-colors"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="/" class="flex-shrink-0">
+                    <img src="https://dflawyers.com.au/wp-content/uploads/2024/02/Davis_Logo.png" alt="Davis Ford Lawyers" class="h-16 md:h-20 w-auto">
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="/" class="font-medium text-navy-900 hover:text-brand-red transition">Home</a>
+                    <a href="#" class="font-medium text-brand-red transition">About Us</a>
+                    <div class="relative group">
+                        <a href="https://dflawyers.com.au/our-services/" class="font-medium text-navy-900 hover:text-brand-red transition flex items-center cursor-pointer">
+                            Our Services <i class="fas fa-chevron-down ml-1 text-xs text-brand-red"></i>
+                        </a>
+                        <!-- Dropdown -->
+                        <div class="absolute left-0 mt-2 w-64 bg-white shadow-xl rounded-lg overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 border-t-4 border-brand-red">
+                            <a href="https://dflawyers.com.au/criminal-law-services/" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-red border-b border-gray-100">Criminal Law</a>
+                            <a href="https://dflawyers.com.au/traffic-law/" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-red border-b border-gray-100">Traffic Law</a>
+                            <a href="https://dflawyers.com.au/licence-appeals/" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-red border-b border-gray-100">Licence Appeals</a>
+                            <a href="https://dflawyers.com.au/workplace-investigations/" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-red border-b border-gray-100">Workplace Investigations</a>
+                            <a href="https://dflawyers.com.au/wills-and-probates/" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-red border-b border-gray-100">Wills & Probates</a>
+                            <a href="https://dflawyers.com.au/family-law-services/" class="block px-6 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-brand-red">Family Law</a>
+                        </div>
+                    </div>
+                    <a href="https://dflawyers.com.au/forms/" class="font-medium text-navy-900 hover:text-brand-red transition">Forms</a>
+                    <a href="#" class="font-medium text-navy-900 hover:text-brand-red transition">Articles</a>
+                </nav>
+
+                <!-- CTA Button & Mobile Toggle -->
+                <div class="flex items-center space-x-4">
+                    <a href="https://coastalcriminallaw.com.au/contact-us/" class="hidden lg:inline-block bg-brand-red hover:bg-brand-darkred text-white px-8 py-3 rounded-lg font-semibold transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Contact Us
+                    </a>
+                    <button id="mobile-menu-btn" class="lg:hidden text-navy-900 text-2xl focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg z-50">
+            <div class="flex flex-col px-4 py-4 space-y-4">
+                <a href="/" class="font-medium text-navy-900">Home</a>
+                <a href="#" class="font-medium text-brand-red">About Us</a>
+                <a href="https://dflawyers.com.au/our-services/" class="font-medium text-navy-900">Our Services</a>
+                <a href="https://dflawyers.com.au/forms/" class="font-medium text-navy-900">Forms</a>
+                <a href="#" class="font-medium text-navy-900">Articles</a>
+                <a href="https://coastalcriminallaw.com.au/contact-us/" class="bg-brand-red text-white text-center py-2 rounded-lg font-medium">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-navy-900 py-16 md:py-24 relative overflow-hidden">
+        <!-- Abstract Background Pattern -->
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+        
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About Us</h1>
+            <nav class="flex justify-center" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="/" class="text-gray-400 hover:text-white transition">Home</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-500 mx-2 text-xs"></i>
+                            <span class="text-brand-red font-medium">About Us</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Content / Bio Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+                
+                <!-- Image Column -->
+                <div class="lg:w-5/12 w-full">
+                    <div class="relative group sticky top-28">
+                        <div class="rounded-lg overflow-hidden shadow-2xl relative border-4 border-gray-50">
+                            <!-- Using image from old website source -->
+                            <img src="https://dflawyers.com.au/wp-content/uploads/2024/02/Davis-Ford-Lawyers-683x1024.jpeg" alt="Stuart - Davis Ford Lawyers" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                        </div>
+                        <!-- Experience Badge -->
+                        <div class="absolute -bottom-6 -right-6 bg-navy-900 text-white p-6 rounded-lg shadow-xl z-10 border-b-4 border-brand-red">
+                             <div class="text-center">
+                                 <span class="block text-3xl font-bold text-brand-red">30</span>
+                                 <span class="text-xs font-medium uppercase tracking-wider">Years Exp.</span>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="lg:w-7/12 w-full">
+                    <span class="text-brand-red font-bold uppercase tracking-widest text-sm mb-2 block">Davis-Ford Lawyers</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-6 leading-tight">Expert representation tailored to your needs</h2>
+                    
+                    <div class="prose prose-lg text-gray-600 leading-relaxed">
+                        <p class="mb-6">
+                            Davis Ford Lawyers is renowned for its expertise in criminal defence law along with other practice areas. Our commitment to ethical and effective legal representation has established us as a trusted law firm in Sydney.
+                        </p>
+                        
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-brand-red mb-8">
+                            <p class="mb-0 text-navy-800 font-medium italic">
+                                "Guiding our team is Stuart, a legal veteran with nearly 30 years in the sector. His diverse experience spans general policing, investigations, covert policing, and prosecutions."
+                            </p>
+                        </div>
+
+                        <p class="mb-6">
+                            As a former <strong>Chief Inspector</strong>, Stuart's in-depth understanding of police procedures and investigation methodologies sets us apart, especially in cases requiring intricate legal navigation.
+                        </p>
+
+                        <p class="mb-6">
+                            Stuart's proficiency as a criminal defence lawyer in Sydney makes him an invaluable ally in the courtroom. His track record in prosecuting and investigating thousands of cases underscores our firm's capability to guide clients through complex court cases and legal challenges. Whether litigation, dispute resolution, or negotiation, Stuart's approach is tailored to secure the best outcomes for each client.
+                        </p>
+
+                        <p class="mb-8">
+                            For expert legal counsel in Sydney's criminal defence and civil litigation landscape, turn to Davis Ford Lawyers. We're here to offer unparalleled legal guidance and advocacy, ensuring your case is handled with professionalism and skill.
+                        </p>
+                    </div>
+
+                    <a href="https://coastalcriminallaw.com.au/contact-us/" class="inline-flex items-center justify-center bg-brand-red hover:bg-brand-darkred text-white px-8 py-3 rounded-lg font-semibold transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Contact Us Today <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50 border-t border-gray-200 overflow-hidden">
+        <div class="container mx-auto px-4 mb-16 text-center">
+            <span class="text-brand-red font-bold uppercase tracking-widest text-sm mb-3 block">Testimonials</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-navy-900 mb-6">What Our Clients Say</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Client voices illuminate our firm's excellence. Their succinct testimonials encapsulate our expertise, dedication, and unwavering commitment.</p>
+        </div>
+
+        <div class="marquee-container relative w-full overflow-hidden">
+            <div class="flex animate-infinite-scroll w-max hover:pause">
+                <!-- Wrapper for duplication -->
+                <div class="flex gap-6 px-4">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"In times of legal uncertainty, their expertise was a lifeline. With clear communication and personalized attention, they guided me through complexities, ensuring the best outcome."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">SJ</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">Sarah Johnson</h5>
+                                <span class="text-xs text-gray-500">Marketing Manager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"Their dedication surpassed all expectations. From the first consultation to the successful resolution, their unwavering commitment and extensive experience shone through."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">DM</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">David Martinez</h5>
+                                <span class="text-xs text-gray-500">Small Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"Choosing them was the best decision for our legal needs. Their professionalism and comprehensive expertise in criminal law and licence appeals were evident."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">EB</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">Emily Brown</h5>
+                                <span class="text-xs text-gray-500">HR Director</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"They're the epitome of reliability in legal matters. With a proven track record and client-centric approach, they exceeded expectations."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">MT</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">Michael Thompson</h5>
+                                <span class="text-xs text-gray-500">Freelance Consultant</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"They went above and beyond, delivering results beyond compare. Their precision in practice and unwavering dedication ensured a favorable outcome."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">RA</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">Rebecca Adams</h5>
+                                <span class="text-xs text-gray-500">Real Estate Agent</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"Their strategic approach and deep legal insights were invaluable. With their guidance, I navigated a challenging legal situation with confidence."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">JS</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">John Smith</h5>
+                                <span class="text-xs text-gray-500">CEO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Duplicate for Loop -->
+                <div class="flex gap-6 px-4" aria-hidden="true">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"In times of legal uncertainty, their expertise was a lifeline. With clear communication and personalized attention, they guided me through complexities, ensuring the best outcome."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">SJ</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">Sarah Johnson</h5>
+                                <span class="text-xs text-gray-500">Marketing Manager</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"Their dedication surpassed all expectations. From the first consultation to the successful resolution, their unwavering commitment and extensive experience shone through."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">DM</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">David Martinez</h5>
+                                <span class="text-xs text-gray-500">Small Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"Choosing them was the best decision for our legal needs. Their professionalism and comprehensive expertise in criminal law and licence appeals were evident."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">EB</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">Emily Brown</h5>
+                                <span class="text-xs text-gray-500">HR Director</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"They're the epitome of reliability in legal matters. With a proven track record and client-centric approach, they exceeded expectations."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">MT</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">Michael Thompson</h5>
+                                <span class="text-xs text-gray-500">Freelance Consultant</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"They went above and beyond, delivering results beyond compare. Their precision in practice and unwavering dedication ensured a favorable outcome."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">RA</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">Rebecca Adams</h5>
+                                <span class="text-xs text-gray-500">Real Estate Agent</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="w-[350px] bg-white p-8 rounded-lg shadow-sm border border-gray-100 flex-shrink-0">
+                        <div class="mb-4 text-brand-red text-xs">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic mb-6 leading-relaxed">"Their strategic approach and deep legal insights were invaluable. With their guidance, I navigated a challenging legal situation with confidence."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-navy-100 text-brand-red flex items-center justify-center font-bold mr-3">JS</div>
+                            <div>
+                                <h5 class="font-bold text-navy-900 text-sm">John Smith</h5>
+                                <span class="text-xs text-gray-500">CEO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / CTA Banner -->
+    <section class="bg-navy-900 py-20 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">We’re not just lawyers, we’re advocates for justice.</h2>
+            <div class="h-1.5 w-24 bg-brand-red mx-auto rounded-lg mb-10"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center mt-12 divide-y md:divide-y-0 md:divide-x divide-gray-700">
+                <div class="p-4">
+                    <div class="text-brand-red text-4xl mb-4"><i class="fas fa-balance-scale"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Decades of Expertise</h4>
+                    <p class="text-gray-400 text-sm">Over 20 years in law enforcement and practice.</p>
+                </div>
+                <div class="p-4">
+                    <div class="text-brand-red text-4xl mb-4"><i class="fas fa-fist-raised"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Pursuit of Justice</h4>
+                    <p class="text-gray-400 text-sm">Dedicated to fighting for the best outcome.</p>
+                </div>
+                <div class="p-4">
+                    <div class="text-brand-red text-4xl mb-4"><i class="fas fa-crosshairs"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Specialised Focus</h4>
+                    <p class="text-gray-400 text-sm">Targeted expertise in criminal & traffic law.</p>
+                </div>
+                <div class="p-4">
+                    <div class="text-brand-red text-4xl mb-4"><i class="fas fa-user-shield"></i></div>
+                    <h4 class="font-bold text-xl mb-2">Client-Centric</h4>
+                    <p class="text-gray-400 text-sm">Personalised strategy for every client.</p>
+                </div>
+            </div>
+
+            <div class="mt-16">
+                <a href="https://coastalcriminallaw.com.au/contact-us/" class="bg-brand-red hover:bg-brand-darkred text-white px-10 py-4 rounded-lg font-bold transition shadow-lg hover:shadow-red-900/50 inline-block transform hover:-translate-y-1">
+                    Schedule Your Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 text-gray-400 pt-16 pb-8 border-t border-brand-red">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Col 1: Logo & Info -->
+                <div>
+                    <img src="https://dflawyers.com.au/wp-content/uploads/2024/02/footerlogo.png" alt="Davis Ford Footer Logo" class="w-48 mb-6 brightness-0 invert opacity-90">
+                    <p class="text-sm leading-relaxed mb-6">Liability Limited by a scheme approved under Professional Standards Legislation.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-navy-800 hover:bg-brand-red text-white w-10 h-10 rounded-full flex items-center justify-center transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="bg-navy-800 hover:bg-brand-red text-white w-10 h-10 rounded-full flex items-center justify-center transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="bg-navy-800 hover:bg-brand-red text-white w-10 h-10 rounded-full flex items-center justify-center transition"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6 relative inline-block">
+                        Quick Links
+                        <span class="absolute bottom-[-8px] left-0 w-10 h-0.5 bg-brand-red"></span>
+                    </h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="/" class="hover:text-brand-red transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-brand-red"></i>Home</a></li>
+                        <li><a href="https://dflawyers.com.au/about-us/" class="hover:text-brand-red transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-brand-red"></i>About Us</a></li>
+                        <li><a href="https://dflawyers.com.au/our-services/" class="hover:text-brand-red transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-brand-red"></i>Our Services</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-brand-red"></i>Blog</a></li>
+                        <li><a href="https://coastalcriminallaw.com.au/contact-us/" class="hover:text-brand-red transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-brand-red"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Practice Areas -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6 relative inline-block">
+                        Practice Areas
+                        <span class="absolute bottom-[-8px] left-0 w-10 h-0.5 bg-brand-red"></span>
+                    </h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-brand-red transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-brand-red"></i>Criminal Law</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-brand-red"></i>Traffic Law</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-brand-red"></i>Licence Appeal</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-brand-red"></i>Workplace Investigations</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-brand-red"></i>Family Law</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-6 relative inline-block">
+                        Contact Us
+                        <span class="absolute bottom-[-8px] left-0 w-10 h-0.5 bg-brand-red"></span>
+                    </h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-brand-red"></i>
+                            <span>Suite 2 / 476 High Street,<br>Penrith NSW 2750</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-brand-red"></i>
+                            <a href="mailto:info@dflawyers.com.au" class="hover:text-white transition">info@dflawyers.com.au</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-brand-red"></i>
+                            <a href="tel:0431666741" class="hover:text-white transition">0431 666 741</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-xs">
+                <p>&copy; 2025 Davis Ford Lawyers. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
